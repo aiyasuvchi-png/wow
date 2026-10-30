@@ -1,0 +1,6 @@
+{
+  "name": "Smash Karts — 3D Gaming Portal",
+  "description": "Enter the arena. Fight, race, and win in Smash Karts and explore top browser 3D multiplayer games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

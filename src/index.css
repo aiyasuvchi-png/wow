@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #060913;
+    color: #f1f5f9;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow {
+    animation: none;
+  }
+}
